@@ -1,31 +1,16 @@
 @CHARSET "ISO-8859-1";
 
-div.gallery img {
+html {
+	background: url(/Images/photo5999178141614057464.jpg) no-repeat center
+		center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+table {
 	width: 100%;
-	height: auto;
-}
-
-.responsive {
-	padding: 0 6px;
-	float: left;
-	width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-	.responsive {
-		width: 49.99999%;
-		margin: 6px 0;
-	}
-}
-
-@media only screen and (max-width: 500px) {
-	.responsive {
-		width: 100%;
-	}
-}
-
-.clearfix:after {
-	content: "";
-	display: table;
-	clear: both;
+	height: 100%;
+	position: absolute;
 }
