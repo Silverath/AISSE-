@@ -9,42 +9,54 @@ html {
 	background-size: cover;
 }
 
+body {
+	margin-top: 5%
+}
+
 .white-background {
 	margin-left: 10%;
 	margin-right: 10%;
 	height: 100%;
 	background-color: white;
 	border-radius: 0.4cm;
-	margin-left: 10%;
 }
 
-.owlogo {
+.LoLlogo {
+	padding-top: 10px;
 	text-align: center;
+}
+
+.searchBox {
+	text-align: center;
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+	border: medium solid;
+	border-radius: 0.1cm;
+}
+
+form input[type=submit] {
+	display: block;
+	width: 20%;
+	height: 30px;
+	margin: 0 auto;
+	border: thin outset;
+	font-family: sans-serif;
 }
 
 h1, p {
 	font-family: sans-serif;
 }
 
-form input[type=text] {
-	display: block;
-	width: 50%;
-	margin: 0 auto;
-	text-align: center;
-	border: thin groove;
-	font-family: sans-serif;
-}
-
-form button {
-	display: block;
-	width: 20%;
-	height: 20px;
-	margin: 0 auto;
-	border: thin outset;
-	font-family: sans-serif;
-}
-
 .division {
-	margin: 10px;
+	margin-top: 10px;
 	border-top: thin solid grey;
+}
+
+tr {
+	height: 300px;
+}
+
+iframe {
+	height: 180%;
 }

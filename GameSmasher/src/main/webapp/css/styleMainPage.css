@@ -14,3 +14,7 @@ table {
 	height: 100%;
 	position: absolute;
 }
+
+img {
+	border-radius: 0.1cm;
+}
