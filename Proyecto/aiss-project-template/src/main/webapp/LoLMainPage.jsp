@@ -23,9 +23,9 @@
 		<div class="division">
 			<table>
 				<tr>
-					<td align="center" width="50%"><iframe width="80%"><c:out value="${requestScope.stream}"></c:out></iframe></td>
+					<td align="center" width="50%"><iframe width="80%"></iframe></td>
 					<td>
-						<h1>How does this work?</h1>
+						<h1>How does this works?</h1>
 						<p>This search will use your summoner's name from League of
 							Legends to show you the information about your profile, like your
 							last games, your most played champions, your runes, masteries,
