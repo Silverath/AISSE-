@@ -1,0 +1,79 @@
+@CHARSET "ISO-8859-1";
+
+.logo {
+	float: left;
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+}
+
+.searchAgain {
+	width: 100%;
+}
+
+.summonerSearch {
+	float: right;
+	padding: 50px;
+}
+
+.searchButton {
+	display: block;
+	width: 20%;
+	height: 30px;
+	margin: 0 auto;
+	border: thin outset;
+	font-family: sans-serif;
+}
+
+.division {
+	margin-top: 10px;
+	border-top: thin solid grey;
+}
+
+.playerIcon {
+	border-radius: 100%;
+}
+
+.profile {
+	margin-top: 5px;
+	text-align: center;
+}
+
+.profileInfo {
+	display: inline-block;
+	width: 100%;
+}
+
+.updateButton, .liveGameButton {
+	border: 2px solid black;
+	background: goldenRod;
+	color: black;
+	padding: 10px 14px;
+	border-radius: 1cm;
+}
+
+.buttonMenu {
+	width: 100%;
+	margin-top: 10px;
+	display: inline-table;
+	text-align: center;
+	position: relative;
+}
+
+.buttonMenu button {
+	border: 2px solid black;
+	background: goldenRod;
+	color: white;
+	padding: 10px 14px;
+}
+
+.buttonMenu button:not(:last-child) {
+	border-right: none;
+}
+
+span {
+	font-family: monospace;
+	position: relative;
+	font-size:30px;
+	top: -55px;
+}
