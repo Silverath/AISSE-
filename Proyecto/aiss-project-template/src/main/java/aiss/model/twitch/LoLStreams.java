@@ -22,7 +22,7 @@ public class LoLStreams {
 	}
 
 	@JsonProperty("streams")
-	public List<Stream> getStreamList() {
+	public List<Stream> getStreams() {
 		return streams;
 	}
 }

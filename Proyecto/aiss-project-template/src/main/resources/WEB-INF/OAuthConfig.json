@@ -15,6 +15,7 @@
 		"clientSecret": "5miqkn81wk6tilfsb6phu9erkt19xc",
 		"authorizationFormUrl": "https://api.twitch.tv/kraken/oauth2/authorize",
 		"scopes": [
+			"viewing_activity_read"
 			
 		]
 	},

@@ -29,7 +29,7 @@ public class TwitchController extends HttpServlet {
 			request.setAttribute("message", "No streams found");
 		}
 
-		request.setAttribute("stream", stream.getStreamList());
+		request.setAttribute("stream", stream.getStreams());
 		request.getRequestDispatcher("/LoLMainPage.jsp").forward(request, response);
 	}
 

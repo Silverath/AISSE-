@@ -29,7 +29,7 @@ public class FacebookController extends HttpServlet {
 			req.getRequestDispatcher("/PostSuccessfullyCreated.html").forward(req, resp);
 		} else {
 			req.getSession().setAttribute("message", req.getParameter("message"));
-			log.info("Trying to access to Facebook without an access token, redirecting to OAuth servlet");
+			log.info("Trying to acces to Facebook without an acces token, redirecting to OAuth servlet");
 			req.getRequestDispatcher("/AuthController/Facebook").forward(req, resp);
 		}
 	}

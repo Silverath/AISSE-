@@ -4,14 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Post in Facebook - GameSmasher</title>
+<title>Insert title here</title>
 </head>
-<style>
-	textarea{
-		height:7.7em;
-		width:400px;
-	}
-</style>
 <body>
 	<h1>Publicar Post en Facebook</h1>
 	<div class="container">
@@ -21,7 +15,7 @@
 		<form action="/FacebookController" method="post">
 
 			Mensaje:
-			<textarea name="message">Hey! I'm using GameSmasher, it's FREAKING AWESOME! http://vgsmasher-aiss.appspot.com</textarea>
+			<textarea name="message"></textarea>
 			<br>
 			<div class="bottom_links">
 				<button type="submit" class="button">Publicar en Facebook</button>

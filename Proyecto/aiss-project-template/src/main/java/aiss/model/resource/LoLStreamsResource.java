@@ -18,18 +18,9 @@ public class LoLStreamsResource {
 
 		ClientResource cr = null;
 		LoLStreams res = null;
-		String clientid = "ryj52pbjdene8exzhd0vjo8q73oze2";
-		String secret = "7xqd59qxx3twofy3oz5r27rs1gqhtw";
-		String urlParameters =
-				  "client_id=" + clientid
-				+ "&grant_type=authorization_code"
-				+ "&redirect_uri=" + "http://localhost:8090"
-				+ "&scopes=openid";
-				
 
 		try {
-			cr = new ClientResource(uri + game + urlParameters);
-			res = cr.get(LoLStreams.class);
+			cr = new ClientResource(uri + game);
 		} catch (ResourceException re) {
 			System.err.println("Status code:" + cr.getResponse().getStatus());
 		}
