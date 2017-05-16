@@ -1,0 +1,31 @@
+{
+	"Facebook": {
+		"tokenUrl": "https://graph.facebook.com/v2.9/oauth/access_token",
+		"clientId": "1465404176838208",
+		"clientSecret": "5eb12824b869e7e1d1c110b2860f1eff",
+		"authorizationFormUrl": "https://www.facebook.com/v2.9/dialog/oauth",
+		"scopes": [
+			"user_posts",
+			"publish_actions"
+		]
+	},
+	"Twitch": {
+		"tokenUrl": "https://api.twitch.tv/kraken/oauth2/token",
+		"clientId": "ryj52pbjdene8exzhd0vjo8q73oze2",
+		"clientSecret": "5miqkn81wk6tilfsb6phu9erkt19xc",
+		"authorizationFormUrl": "https://api.twitch.tv/kraken/oauth2/authorize",
+		"scopes": [
+			
+		]
+	},
+	"Dropbox": {
+		"tokenUrl": "https://api.dropboxapi.com/1/oauth2/token",
+		"clientId": "aofxesskwgzvd5m",
+		"clientSecret": "aofxesskwgzvd5m",
+		"authorizationFormUrl": "https://www.dropbox.com/1/oauth2/authorize",
+		"scopes": [
+			"viewing_activity_read"
+			
+		]
+	}
+}		
