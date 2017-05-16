@@ -1,0 +1,41 @@
+@CHARSET "ISO-8859-1";
+
+.LoLlogo {
+	padding-top: 10px;
+	text-align: center;
+}
+
+.searchBox {
+	text-align: center;
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+	border: medium solid;
+	border-radius: 0.1cm;
+}
+
+form input[type=submit] {
+	display: block;
+	width: 20%;
+	height: 30px;
+	margin: 0 auto;
+	border: thin outset;
+	font-family: sans-serif;
+}
+
+h1, p {
+	font-family: sans-serif;
+}
+
+.division {
+	margin-top: 10px;
+	border-top: thin solid grey;
+}
+
+tr {
+	height: 300px;
+}
+
+iframe {
+	height: 180%;
+}
