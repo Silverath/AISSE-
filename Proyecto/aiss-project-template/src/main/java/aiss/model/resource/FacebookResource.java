@@ -12,6 +12,9 @@ public class FacebookResource {
 
 	public boolean publishPost(String message) {
 		String normalizedMessage = message.replace(' ', '+');
+		String uri_post = uri + "?access_token=" + access_token;
+		System.out.println("Facebook URI: " + uri_post);
+		System.out.println("Message: "+ message);
 		ClientResource cr = new ClientResource(uri + "?access_token=" + access_token);
 		cr.post("message=" + normalizedMessage);
 		return true;

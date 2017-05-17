@@ -1,8 +1,6 @@
 
 package aiss.model.twitch;
 
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -16,7 +14,7 @@ public class LoLStreams {
 	@JsonProperty("_total")
 	private Integer total;
 	@JsonProperty("streams")
-	private List<Stream> streams = null;
+	private Stream[] streams = null;
 	@JsonProperty("_links")
 	private Links__ links;
 
@@ -26,7 +24,7 @@ public class LoLStreams {
 	}
 
 	@JsonProperty("streams")
-	public List<Stream> getStreams() {
+	public Stream[] getStreams() {
 		return streams;
 	}
 

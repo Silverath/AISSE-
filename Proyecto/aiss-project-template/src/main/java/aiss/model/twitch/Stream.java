@@ -13,7 +13,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class Stream {
 
 	@JsonProperty("_id")
-	private Integer id;
+	private Long id;
 	@JsonProperty("game")
 	private String game;
 	@JsonProperty("viewers")
@@ -38,7 +38,7 @@ public class Stream {
 	private Links_ links;
 
 	@JsonProperty("_id")
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
