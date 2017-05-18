@@ -1,57 +1,76 @@
-//Información sobre el canal de Twitch
 
 package aiss.model.twitch;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({ "_id", "broadcaster_language", "created_at", "display_name", "followers", "game", "language",
-		"logo", "mature", "name", "partner", "profile_banner", "profile_banner_background_color", "status",
-		"updated_at", "url", "video_banner", "views" })
+@JsonPropertyOrder({ "mature", "partner", "status", "broadcaster_language", "display_name", "game", "language", "_id",
+		"name", "created_at", "updated_at", "delay", "logo", "banner", "video_banner", "background", "profile_banner",
+		"profile_banner_background_color", "url", "views", "followers", "_links" })
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Channel {
 
-	@JsonProperty("_id")
-	private Integer id;
+	@JsonProperty("mature")
+	private Boolean mature;
+	@JsonProperty("partner")
+	private Boolean partner;
+	@JsonProperty("status")
+	private String status;
 	@JsonProperty("broadcaster_language")
 	private String broadcasterLanguage;
-	@JsonProperty("created_at")
-	private String createdAt;
 	@JsonProperty("display_name")
 	private String displayName;
-	@JsonProperty("followers")
-	private Integer followers;
 	@JsonProperty("game")
 	private String game;
 	@JsonProperty("language")
 	private String language;
-	@JsonProperty("logo")
-	private String logo;
-	@JsonProperty("mature")
-	private Boolean mature;
+	@JsonProperty("_id")
+	private Integer id;
 	@JsonProperty("name")
 	private String name;
-	@JsonProperty("partner")
-	private Boolean partner;
+	@JsonProperty("created_at")
+	private String createdAt;
+	@JsonProperty("updated_at")
+	private String updatedAt;
+	@JsonProperty("delay")
+	private Object delay;
+	@JsonProperty("logo")
+	private String logo;
+	@JsonProperty("banner")
+	private Object banner;
+	@JsonProperty("video_banner")
+	private String videoBanner;
+	@JsonProperty("background")
+	private Object background;
 	@JsonProperty("profile_banner")
 	private String profileBanner;
 	@JsonProperty("profile_banner_background_color")
-	private Object profileBannerBackgroundColor;
-	@JsonProperty("status")
-	private String status;
-	@JsonProperty("updated_at")
-	private String updatedAt;
+	private String profileBannerBackgroundColor;
 	@JsonProperty("url")
 	private String url;
-	@JsonProperty("video_banner")
-	private String videoBanner;
 	@JsonProperty("views")
 	private Integer views;
+	@JsonProperty("followers")
+	private Integer followers;
+	@JsonProperty("_links")
+	private Links links;
 
-	@JsonProperty("_id")
-	public Integer getId() {
-		return id;
+	@JsonProperty("mature")
+	public Boolean getMature() {
+		return mature;
+	}
+
+	@JsonProperty("partner")
+	public Boolean getPartner() {
+		return partner;
+	}
+
+	@JsonProperty("status")
+	public String getStatus() {
+		return status;
 	}
 
 	@JsonProperty("broadcaster_language")
@@ -59,19 +78,9 @@ public class Channel {
 		return broadcasterLanguage;
 	}
 
-	@JsonProperty("created_at")
-	public String getCreatedAt() {
-		return createdAt;
-	}
-
 	@JsonProperty("display_name")
 	public String getDisplayName() {
 		return displayName;
-	}
-
-	@JsonProperty("followers")
-	public Integer getFollowers() {
-		return followers;
 	}
 
 	@JsonProperty("game")
@@ -84,14 +93,9 @@ public class Channel {
 		return language;
 	}
 
-	@JsonProperty("logo")
-	public String getLogo() {
-		return logo;
-	}
-
-	@JsonProperty("mature")
-	public Boolean getMature() {
-		return mature;
+	@JsonProperty("_id")
+	public Integer getId() {
+		return id;
 	}
 
 	@JsonProperty("name")
@@ -99,9 +103,39 @@ public class Channel {
 		return name;
 	}
 
-	@JsonProperty("partner")
-	public Boolean getPartner() {
-		return partner;
+	@JsonProperty("created_at")
+	public String getCreatedAt() {
+		return createdAt;
+	}
+
+	@JsonProperty("updated_at")
+	public String getUpdatedAt() {
+		return updatedAt;
+	}
+
+	@JsonProperty("delay")
+	public Object getDelay() {
+		return delay;
+	}
+
+	@JsonProperty("logo")
+	public String getLogo() {
+		return logo;
+	}
+
+	@JsonProperty("banner")
+	public Object getBanner() {
+		return banner;
+	}
+
+	@JsonProperty("video_banner")
+	public String getVideoBanner() {
+		return videoBanner;
+	}
+
+	@JsonProperty("background")
+	public Object getBackground() {
+		return background;
 	}
 
 	@JsonProperty("profile_banner")
@@ -110,18 +144,8 @@ public class Channel {
 	}
 
 	@JsonProperty("profile_banner_background_color")
-	public Object getProfileBannerBackgroundColor() {
+	public String getProfileBannerBackgroundColor() {
 		return profileBannerBackgroundColor;
-	}
-
-	@JsonProperty("status")
-	public String getStatus() {
-		return status;
-	}
-
-	@JsonProperty("updated_at")
-	public String getUpdatedAt() {
-		return updatedAt;
 	}
 
 	@JsonProperty("url")
@@ -129,13 +153,19 @@ public class Channel {
 		return url;
 	}
 
-	@JsonProperty("video_banner")
-	public String getVideoBanner() {
-		return videoBanner;
-	}
-
 	@JsonProperty("views")
 	public Integer getViews() {
 		return views;
 	}
+
+	@JsonProperty("followers")
+	public Integer getFollowers() {
+		return followers;
+	}
+
+	@JsonProperty("_links")
+	public Links getLinks() {
+		return links;
+	}
+
 }
