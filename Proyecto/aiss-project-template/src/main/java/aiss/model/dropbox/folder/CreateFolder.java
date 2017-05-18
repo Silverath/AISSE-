@@ -3,12 +3,15 @@ package aiss.model.dropbox.folder;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({ "name", "id", "path_lower", "path_display", "sharing_info", "property_groups" })
+@JsonIgnoreProperties(ignoreUnknown=true)
+
 public class CreateFolder {
 
 	@JsonProperty("name")

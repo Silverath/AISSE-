@@ -11,8 +11,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({ ".tag", "name", "id", "client_modified", "server_modified", "rev", "size", "path_lower",
 		"path_display", "sharing_info", "property_groups", "has_explicit_shared_members", "content_hash" })
 @JsonIgnoreProperties(ignoreUnknown=true)
-
-public class DeleteFolderFile {
+public class Entry {
 
 	@JsonProperty(".tag")
 	private String tag;

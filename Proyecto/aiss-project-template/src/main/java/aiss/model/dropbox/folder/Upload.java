@@ -8,14 +8,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({ ".tag", "name", "id", "client_modified", "server_modified", "rev", "size", "path_lower",
-		"path_display", "sharing_info", "property_groups", "has_explicit_shared_members", "content_hash" })
+@JsonPropertyOrder({ "name", "id", "client_modified", "server_modified", "rev", "size", "path_lower", "path_display",
+		"sharing_info", "property_groups", "has_explicit_shared_members", "content_hash" })
 @JsonIgnoreProperties(ignoreUnknown=true)
 
-public class DeleteFolderFile {
+public class Upload {
 
-	@JsonProperty(".tag")
-	private String tag;
 	@JsonProperty("name")
 	private String name;
 	@JsonProperty("id")
@@ -40,11 +38,6 @@ public class DeleteFolderFile {
 	private Boolean hasExplicitSharedMembers;
 	@JsonProperty("content_hash")
 	private String contentHash;
-
-	@JsonProperty(".tag")
-	public String getTag() {
-		return tag;
-	}
 
 	@JsonProperty("name")
 	public String getName() {
