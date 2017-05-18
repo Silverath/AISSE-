@@ -9,12 +9,12 @@ import aiss.model.lol.LoLID;
 import aiss.model.lol.champion.ChampionID;
 
 public class LoLResource {
-	private final String uriSummoner = "https://euw1.api.riotgames.com/lol/summoner/v3/summoners/by-name";
+	private static final String uriSummoner = "https://euw1.api.riotgames.com/lol/summoner/v3/summoners/by-name";
 	private final String uriChampion = "https://euw1.api.riotgames.com/lol/platform/v3/champions";
-	private final String apiKey = "?api_key=RGAPI-50d7cb0c-1a86-43b1-bc0c-c7c55f5eb730";
+	private final static String apiKey = "?api_key=RGAPI-50d7cb0c-1a86-43b1-bc0c-c7c55f5eb730";
 	private static final Logger log = Logger.getLogger(LoLResource.class.getName());
 
-	public LoLID getSummoner(String summonerName) {
+	public static LoLID getSummoner(String summonerName) {
 		ClientResource cr = null;
 		LoLID id = null;
 

@@ -66,4 +66,6 @@ public class LoLID {
 	public Long getRevisionDate() {
 		return revisionDate;
 	}
+	
+	
 }
