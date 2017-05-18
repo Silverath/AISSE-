@@ -3,10 +3,13 @@ package aiss.model.api;
 import java.util.ArrayList;
 import java.util.List;
 
+import aiss.model.lol.LoLID;
+
 public class SummonerComments {
 
 	private String id;
 	private List<Comment> comments;
+	private LoLID summoner;
 
 	public SummonerComments() {
 
@@ -16,9 +19,24 @@ public class SummonerComments {
 		this.id = id;
 
 	}
+	
+	public SummonerComments(String id, LoLID summoner) {
+		this.id = id;
+		this.summoner = summoner;
+		this.comments = new ArrayList<Comment>();
 
-	protected void setComments(List<Comment> comments) {
+	}
+
+	public void setComments(List<Comment> comments) {
 		this.comments = comments;
+	}
+	
+	public LoLID getSummoner(){
+		return this.summoner;
+	}
+	
+	public void setSummoner(LoLID summoner){
+		this.summoner = summoner;
 	}
 
 	public String getId() {
