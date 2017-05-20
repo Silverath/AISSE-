@@ -23,10 +23,17 @@
 		</div>
 		<div class="division">
 			<table>
+<<<<<<< HEAD
 				<tr height="500px">
 					<td align="center" width="70%" height="310px"><iframe
 							src="http://player.twitch.tv/?channel=<c:out value="${requestScope.nombreCanal}"></c:out>&muted=true"
 							height="100%" width="100%" scrolling="no" allowfullscreen="true">
+=======
+				<tr>
+					<td align="center" width="50%"><iframe
+							src="http://player.twitch.tv/?channel=<c:out value="${requestScope.nombreCanal}"></c:out>&muted=true"
+							height="100%" width="70%" scrolling="no" allowfullscreen="true">
+>>>>>>> master
 						</iframe></td>
 					<td>
 						<table class="yt">

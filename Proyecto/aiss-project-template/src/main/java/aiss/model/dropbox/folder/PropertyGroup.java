@@ -2,6 +2,11 @@
 package aiss.model.dropbox.folder;
 
 import java.util.List;
+<<<<<<< HEAD
+=======
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+>>>>>>> master
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -11,6 +16,11 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "template_id",
     "fields"
 })
+<<<<<<< HEAD
+=======
+@JsonIgnoreProperties(ignoreUnknown=true)
+
+>>>>>>> master
 public class PropertyGroup {
 
     @JsonProperty("template_id")

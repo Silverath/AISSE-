@@ -1,6 +1,10 @@
 
 package aiss.model.dropbox.folder;
 
+<<<<<<< HEAD
+=======
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+>>>>>>> master
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -12,6 +16,11 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "traverse_only",
     "no_access"
 })
+<<<<<<< HEAD
+=======
+@JsonIgnoreProperties(ignoreUnknown=true)
+
+>>>>>>> master
 public class SharingInfo {
 
     @JsonProperty("read_only")

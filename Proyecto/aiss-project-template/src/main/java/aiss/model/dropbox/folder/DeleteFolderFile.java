@@ -2,6 +2,10 @@ package aiss.model.dropbox.folder;
 
 import java.util.List;
 
+<<<<<<< HEAD
+=======
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+>>>>>>> master
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -9,6 +13,11 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({ ".tag", "name", "id", "client_modified", "server_modified", "rev", "size", "path_lower",
 		"path_display", "sharing_info", "property_groups", "has_explicit_shared_members", "content_hash" })
+<<<<<<< HEAD
+=======
+@JsonIgnoreProperties(ignoreUnknown=true)
+
+>>>>>>> master
 public class DeleteFolderFile {
 
 	@JsonProperty(".tag")
