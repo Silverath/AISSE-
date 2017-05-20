@@ -56,6 +56,8 @@
 				<a href="/EditPost.jsp">Crear post en Facebook</a>
 			</p>
 			<br>
+<<<<<<< HEAD
+=======
 			<p><p>
 				<a href="/GoogleDriveFileListing.jsp">Google Drive</a>
 			</p></p>
@@ -71,6 +73,10 @@
 				<div class = "body"><p><c:out value="${comment.body}"></c:out></p></div>
 			</c:forEach>
 			<br>
+<<<<<<< HEAD
+=======
+>>>>>>> master
+>>>>>>> Figueroa
 		</div>
 	</div>
 </body>

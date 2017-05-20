@@ -16,17 +16,6 @@
 		"authorizationFormUrl": "https://api.twitch.tv/kraken/oauth2/authorize",
 		"scopes": [
 			"viewing_activity_read"
-			
-		]
-	},
-	"Dropbox": {
-		"tokenUrl": "https://api.dropboxapi.com/1/oauth2/token",
-		"clientId": "aofxesskwgzvd5m",
-		"clientSecret": "aofxesskwgzvd5m",
-		"authorizationFormUrl": "https://www.dropbox.com/1/oauth2/authorize",
-		"scopes": [
-			"viewing_activity_read"
-			
 		]
 	}
-}		
+}

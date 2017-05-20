@@ -23,10 +23,20 @@
 		</div>
 		<div class="division">
 			<table>
+<<<<<<< HEAD
+				<tr height="500px">
+					<td align="center" width="70%" height="310px"><iframe
+							src="http://player.twitch.tv/?channel=<c:out value="${requestScope.nombreCanal}"></c:out>&muted=true"
+							height="100%" width="100%" scrolling="no" allowfullscreen="true">
+=======
 				<tr>
 					<td align="center" width="50%"><iframe
 							src="http://player.twitch.tv/?channel=<c:out value="${requestScope.nombreCanal}"></c:out>&muted=true"
 							height="100%" width="70%" scrolling="no" allowfullscreen="true">
+<<<<<<< HEAD
+=======
+>>>>>>> master
+>>>>>>> Figueroa
 						</iframe></td>
 					<td>
 						<h1>How does this works?</h1>
@@ -39,6 +49,15 @@
 					</td>
 				</tr>
 			</table>
+			<div class="division">
+				<h1>How does this works?</h1>
+				<p>This search will use your summoner's name from League of
+					Legends to show you the information about your profile, like your
+					last games, your most played champions, your runes, masteries, etc.
+					Once you enter your summoner's name, you will be redirected to that
+					page with the information got directly from Riot Games official
+					API.</p>
+			</div>
 		</div>
 	</div>
 </body>
