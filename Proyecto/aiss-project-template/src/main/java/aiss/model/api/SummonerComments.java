@@ -19,7 +19,7 @@ public class SummonerComments {
 		this.id = id;
 
 	}
-	
+
 	public SummonerComments(String id, LoLID summoner) {
 		this.id = id;
 		this.summoner = summoner;
@@ -30,12 +30,12 @@ public class SummonerComments {
 	public void setComments(List<Comment> comments) {
 		this.comments = comments;
 	}
-	
-	public LoLID getSummoner(){
+
+	public LoLID getSummoner() {
 		return this.summoner;
 	}
-	
-	public void setSummoner(LoLID summoner){
+
+	public void setSummoner(LoLID summoner) {
 		this.summoner = summoner;
 	}
 
