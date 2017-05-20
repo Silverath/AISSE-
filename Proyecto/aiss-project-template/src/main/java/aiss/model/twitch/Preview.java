@@ -1,27 +1,28 @@
-//Miniatura del Stream
 
 package aiss.model.twitch;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({ "large", "medium", "small", "template" })
+@JsonPropertyOrder({ "small", "medium", "large", "template" })
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Preview {
 
-	@JsonProperty("large")
-	private String large;
-	@JsonProperty("medium")
-	private String medium;
 	@JsonProperty("small")
 	private String small;
+	@JsonProperty("medium")
+	private String medium;
+	@JsonProperty("large")
+	private String large;
 	@JsonProperty("template")
 	private String template;
 
-	@JsonProperty("large")
-	public String getLarge() {
-		return large;
+	@JsonProperty("small")
+	public String getSmall() {
+		return small;
 	}
 
 	@JsonProperty("medium")
@@ -29,9 +30,9 @@ public class Preview {
 		return medium;
 	}
 
-	@JsonProperty("small")
-	public String getSmall() {
-		return small;
+	@JsonProperty("large")
+	public String getLarge() {
+		return large;
 	}
 
 	@JsonProperty("template")

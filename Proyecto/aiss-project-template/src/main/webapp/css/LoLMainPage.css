@@ -39,3 +39,15 @@ tr {
 iframe {
 	height: 180%;
 }
+
+.yt tr {
+	height: 20px;
+}
+
+.yt td {
+	padding: 5px;
+}
+
+h3 {
+	font-family: sans-serif;
+}

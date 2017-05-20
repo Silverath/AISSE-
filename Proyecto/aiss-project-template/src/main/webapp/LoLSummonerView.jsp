@@ -56,10 +56,6 @@
 				<a href="/EditPost.jsp">Crear post en Facebook</a>
 			</p>
 			<br>
-			<p><p>
-				<a href="/GoogleDriveFileListing.jsp">Google Drive</a>
-			</p></p>
-
 		</div>
 	</div>
 </body>
