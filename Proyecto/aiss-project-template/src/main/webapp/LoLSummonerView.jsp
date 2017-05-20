@@ -56,6 +56,8 @@
 				<a href="/EditPost.jsp">Crear post en Facebook</a>
 			</p>
 			<br>
+<<<<<<< HEAD
+=======
 			<p><p>
 				<a href="/GoogleDriveFileListing.jsp">Google Drive</a>
 			</p></p>
@@ -65,10 +67,16 @@
 			</p>
 			<br>
 			<c:forEach  items= "${SummonerComments.id}" var = "comment">
-				<div class = "title"><p>Title: <c:out value="${comment.title}"></c:out></p></div>
+				<div class = "author"><p>Autor: <c:out value="${comment.author}"></c:out></p></div>
+				<div class = "title"><p>Título: <c:out value="${comment.title}"></c:out></p></div>
+				<br>
 				<div class = "body"><p><c:out value="${comment.body}"></c:out></p></div>
 			</c:forEach>
 			<br>
+<<<<<<< HEAD
+=======
+>>>>>>> master
+>>>>>>> Figueroa
 		</div>
 	</div>
 </body>

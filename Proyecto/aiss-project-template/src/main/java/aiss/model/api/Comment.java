@@ -1,13 +1,13 @@
 package aiss.model.api;
 
+import aiss.model.lol.LoLID;
+
 public class Comment {
 
 	private String title;
 	private String body;
 	private String id;
-
-	// private Integer like;
-	// private Integer dislike;
+	private String author;
 
 	public Comment() {
 	}
@@ -21,13 +21,25 @@ public class Comment {
 		this.body = body;
 	}
 
-	protected void setTitle(String title) {
-		title = this.title;
+	public Comment(String title, String body, LoLID summoner) {
+		this.title = title;
+		this.body = body;
+		this.author = summoner.getName();
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
 
 	}
 
-	protected void setBody(String body) {
-		body = this.body;
+	public void setBody(String body) {
+		this.body = body;
+
+	}
+
+	public void setAuthor(String summoner) {
+
+		this.author = summoner;
 
 	}
 
@@ -39,11 +51,16 @@ public class Comment {
 		this.id = id;
 	}
 
-	// public Integer getLike() {
-	// return this.like;
-	// }
-	// public Integer getDislike() {
-	// return this.dislike;
-	// }
+	public String getTitle() {
+		return title;
+	}
+
+	public String getBody() {
+		return body;
+	}
+
+	public String getAuthor() {
+		return author;
+	}
 
 }

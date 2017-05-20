@@ -14,9 +14,14 @@
 
 		<form action="/ApiController" method="post">
 
+			Autor:
+			<textarea name="author"></textarea>
+			<br>
+			
 			Título:
 			<textarea name="title"></textarea>
 			<br>
+			
 			comentario:
 			<textarea name="body"></textarea>
 			<br>
