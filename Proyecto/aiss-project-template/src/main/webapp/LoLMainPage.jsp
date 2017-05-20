@@ -39,15 +39,58 @@
 >>>>>>> Figueroa
 						</iframe></td>
 					<td>
-						<h1>How does this works?</h1>
-						<p>This search will use your summoner's name from League of
-							Legends to show you the information about your profile, like your
-							last games, your most played champions, your runes, masteries,
-							etc. Once you enter your summoner's name, you will be redirected
-							to that page with the information got directly from Riot Games
-							official API.</p>
-					</td>
-				</tr>
+						<table class="yt">
+							<tr>
+								<td><a
+									href="https://www.youtube.com/watch?v=<c:out value="${requestScope.ids[0]}"></c:out>"><img
+										alt=""
+										src="<c:out value="${requestScope.miniatures[0]}"></c:out>"></a></td>
+								<td><a
+									href="https://www.youtube.com/watch?v=<c:out value="${requestScope.ids[0]}"></c:out>"><h3>
+											<c:out value="${requestScope.titles[0]}"></c:out>
+										</h3></a></td>
+							</tr>
+							<tr>
+								<td><a
+									href="https://www.youtube.com/watch?v=<c:out value="${requestScope.ids[1]}"></c:out>"><img
+										alt=""
+										src="<c:out value="${requestScope.miniatures[1]}"></c:out>"></a></td>
+								<td><a
+									href="https://www.youtube.com/watch?v=<c:out value="${requestScope.ids[1]}"></c:out>"><h3>
+											<c:out value="${requestScope.titles[1]}"></c:out>
+										</h3></a></td>
+							</tr>
+							<tr>
+								<td><a
+									href="https://www.youtube.com/watch?v=<c:out value="${requestScope.ids[2]}"></c:out>"><img
+										alt=""
+										src="<c:out value="${requestScope.miniatures[2]}"></c:out>"></a></td>
+								<td><a
+									href="https://www.youtube.com/watch?v=<c:out value="${requestScope.ids[2]}"></c:out>"><h3>
+											<c:out value="${requestScope.titles[2]}"></c:out>
+										</h3></a></td>
+							</tr>
+							<tr>
+								<td><a
+									href="https://www.youtube.com/watch?v=<c:out value="${requestScope.ids[3]}"></c:out>"><img
+										alt=""
+										src="<c:out value="${requestScope.miniatures[3]}"></c:out>"></a></td>
+								<td><a
+									href="https://www.youtube.com/watch?v=<c:out value="${requestScope.ids[3]}"></c:out>"><h3>
+											<c:out value="${requestScope.titles[3]}"></c:out>
+										</h3></a></td>
+							</tr>
+							<tr>
+								<td><a
+									href="https://www.youtube.com/watch?v=<c:out value="${requestScope.ids[4]}"></c:out>"><img
+										alt=""
+										src="<c:out value="${requestScope.miniatures[4]}"></c:out>"></a></td>
+								<td><a
+									href="https://www.youtube.com/watch?v=<c:out value="${requestScope.ids[4]}"></c:out>"><h3>
+											<c:out value="${requestScope.titles[4]}"></c:out>
+										</h3></a></td>
+							</tr>
+						</table>
 			</table>
 			<div class="division">
 				<h1>How does this works?</h1>
