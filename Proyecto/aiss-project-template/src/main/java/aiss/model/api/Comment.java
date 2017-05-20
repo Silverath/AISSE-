@@ -20,7 +20,7 @@ public class Comment {
 		this.title = title;
 		this.body = body;
 	}
-	
+
 	public Comment(String title, String body, LoLID summoner) {
 		this.title = title;
 		this.body = body;
@@ -36,9 +36,10 @@ public class Comment {
 		this.body = body;
 
 	}
-	
-	public void setAuthor(LoLID summoner) {
-		this.author = summoner.getName();
+
+	public void setAuthor(String summoner) {
+
+		this.author = summoner;
 
 	}
 
@@ -53,15 +54,13 @@ public class Comment {
 	public String getTitle() {
 		return title;
 	}
-	
+
 	public String getBody() {
 		return body;
 	}
-	
+
 	public String getAuthor() {
 		return author;
 	}
-	
-	
 
 }
